@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeaderImg from './PawMetrics Dog Landing.png';

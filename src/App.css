@@ -42,6 +42,9 @@
   font-weight: 900;
   align-self: center;
 }
+
+
+
   /* Hover Effect Codepen */
   body {
   display: flex;
@@ -85,7 +88,54 @@
 
 
 /* Footer */
+.footerContainer{
+  max-height: 40vh;
+  background-color: #2E545C;
+  color: #D9EEF3;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 2% 4%;
+}
 
+.footerContent{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.socialsAndLogo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
+.socialIcons img{
+  width: 70px;
+  height: auto;
+}
+
+.footerPageLinks{
+  flex-direction: column;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-right: 100px;
+}
+
+.footerLinks{
+  flex-direction: column;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footerLinks p{
+  margin: none;
+}
 
 /* Header Section */
 .dashboardContainer{

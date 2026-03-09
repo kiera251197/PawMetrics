@@ -1,7 +1,6 @@
 import './App.css';
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import HeaderImg from './PawMetrics Dog Landing.png';
 import PawMetricsLogoLong from './Paw Metrics cyan.png';
 import Card from 'react-bootstrap/Card';
@@ -73,6 +72,7 @@ function Dashboard() {
                 </Card>
             </div>
         </div>
+
 
     </div>
   );
