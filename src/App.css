@@ -4,7 +4,7 @@
 
 /* Navbar */
 .sidebar {
-  max-width: 600px;        
+  max-width: 20%;        
   height: 100vh;
   position: sticky;      
   top: 0;
@@ -137,10 +137,32 @@
   margin: none;
 }
 
+
+
 /* Header Section */
 .dashboardContainer{
   min-height: 100vh;
   width: auto;
+}
+
+.greetingContainer{
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2% 4%;
+  padding-bottom: 0%;
+  color: #5E4666;
+  font-family: "Montserrat", sans-serif;
+}
+
+.greetingContainer p{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.greetingContainer h3{
+  font-size: 2rem;
+  font-weight: 700;
+  margin: none !important;
 }
 
 .heroContainer{
@@ -148,6 +170,7 @@
   flex-direction: row;
   align-items: center;
   padding: 2% 4%;
+  padding-top: 0%;
   min-height: 60vh;
 }
 
@@ -298,4 +321,78 @@
   justify-content: space-between;
 }
 
+
+
 /* COMPARISON PAGE! */
+#dropdown-item-button{
+  background-color: #2E545C;
+  color: #D9EEF3;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+#dropdown-item-button:hover{
+  background-color: #5E4666;
+  color: #eac9f3;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.dropdown-menu.show{
+  background-color: #D9EEF3;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.dropdown-item-text{
+  color: #D9EEF3;
+}
+
+.dropdown-item{
+  color: #D9EEF3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn.btn-secondary{
+  background-color: #2E545C;
+  color: #D9EEF3;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.btn.btn-secondary:hover{
+  background-color: #5E4666;
+  color: #eac9f3;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.card-title.h5{
+  color: #D9EEF3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 5px #312037;
+  padding: 4%;
+}
+
