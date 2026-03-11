@@ -2,36 +2,41 @@ import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import Dashboard from './Dashboard';
-import Compare from './Compare';
-import Timeline from './Timeline';
 import Footer from './components/Footer';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
+  // const options = {
+  //   method: 'GET',
+  //   headers: {
+  //     'x-rapidapi-key': 'а53858b274mshc183701b570dde1p126299jsn47fed24ded66', 
+  //     'x-rapidapi-host': 'dogs-by-api-ninjas.p.rapidapi.com'
+  //   }
+  // };
 
-  //State to hold dog breed data
-    const [getDogData, setDogData] = useState([]);
+  // const [dogData, setDogData] = useState("");
     
-    const apiKey = '1HybSEWSnGuFyrTvu2kPvfZHSTLqJvCjCUZCRvog';
-    const apiHost = 'dogs-by-api-ninjas.p.rapidapi.com';
+  // const getDogData = () => {
+  //   fetch("https://dogs-by-api-ninjas.p.rapidapi.com/v1/dogs?name=golden%20retriever")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setDogData(data.message);
+  //     })
+  // };
 
-    useEffect(() => {
-        // Fetch dog breed data from the API
-        fetch('https://dogs-by-api-ninjas.p.rapidapi.com/v1/dogs')
-            .then(response => response.json())
-            .then((data) => {
-                setDogData(data);
-            });
-            
-    }, []);
+  // useEffect(() => {
+  //   getDogData();
+  // }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
-      </header>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <header className="App-header">
+          <Navbar />
+        </header>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

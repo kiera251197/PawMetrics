@@ -28,9 +28,9 @@ function Footer() {
 
                 {/* Footer Page Links */}
                 <div className="footerPageLinks">
-                    <p style={{color: "#BBD58F", fontWeight: "bold", textDecoration: "underline"}}>Dashboard</p>
-                    <p>Comparison</p>
-                    <p>Timeline</p>
+                    <Link to="/">Dashboard</Link>
+                    <Link to="/compare">Comparison</Link>
+                    <Link to="/timeline">Timeline</Link>
                 </div>
 
                 {/* Footer Legal Links */}

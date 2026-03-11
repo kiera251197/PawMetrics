@@ -11,7 +11,7 @@ import TimelineIcon from '../chart-gantt-solid.png';
 
 const Navbar = () => {
   return (
-    <BrowserRouter>
+    <>
       <nav className="sidebar">
         <Link to="/"><img src={LogoVertical} id="pawmetrics-logo-vertical" alt="pawmetrics logo"/> </Link>
         <Link to="/" className='hover-underline'><img src={DashboardIcon} alt="Dashboard" />Dashboard</Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
         <Route path="/compare" element={<Compare />} />
         <Route path="/timeline" element={<Timeline />} />
       </Routes>
-    </BrowserRouter>
+    </>  
   );
 };
 
