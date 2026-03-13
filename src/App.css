@@ -1,12 +1,12 @@
 /* LANDING PAGE! */
-  /* Hero Section */
+ /* Hero Section */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Navbar */
 .sidebar {
   max-width: 20%;        
   height: 100vh;
-  position: sticky;      
+  position: sticky;  
   top: 0;
   background-color: #93A672;
 }
@@ -84,6 +84,9 @@
   .hover-underline:hover::before {
     transform: scaleX(1);
   }
+
+
+
 
 
 
@@ -165,6 +168,9 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
+
+
+
 
 
 /* Header Section */
@@ -353,6 +359,9 @@
 
 
 
+
+
+
 /* COMPARISON PAGE! */
 #dropdown-item-button{
   background-color: #2E545C;
@@ -424,4 +433,67 @@
   margin-bottom: 10px;
   text-shadow: 3px 3px 5px #312037;
   padding: 4%;
+}
+
+.breedContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.compareContainer{
+  min-height: 100vh;
+  width: auto;
+  background-color: #2E545C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectorContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 2%;
+}
+
+.breedCardsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 2%;
+}
+
+.breedCompareContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 2rem;
+}
+
+
+
+
+
+
+/* TIMELINE PAGE! */
+#timelineCard{
+  background-color: #9A72A6;
+  font-family: "Montserrat", sans-serif;
+  color: #F4E3D9;
+  min-height: 40rem;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.400);
+}
+
+.Timeline{
+
 }

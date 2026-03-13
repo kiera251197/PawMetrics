@@ -6,6 +6,7 @@ import PawMetricsLogoLong from './Paw Metrics cyan.png';
 import Card from 'react-bootstrap/Card';
 import { Chart as ChartJS, RadialLinearScale, ArcElement, Tooltip, Legend, LinearScale, PointElement, LineElement, CategoryScale  } from 'chart.js';
 import { Doughnut, Line, PolarArea } from 'react-chartjs-2';
+import Footer from './components/Footer';
 
 ChartJS.register(
     RadialLinearScale, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement
@@ -104,7 +105,7 @@ function Dashboard() {
                     <Card.Text className='cardHeadingText'>
                         Social & Behaviour Insights
                     </Card.Text>
-                    <Doughnut data={{
+                    {/* <Doughnut data={{
                         labels: ['Playfulness', 'Protectiveness', 'Good with Strangers', 'Good with Children', 'Good with Other Dogs'],
                         datasets: [{
                             label: 'Social & Behaviour Insights',
@@ -125,7 +126,7 @@ function Dashboard() {
                             ],
                             borderWidth: 1,
                         }],
-                    }} />   
+                    }} />    */}
                     </Card.Body>
                 </Card>
             </div>
@@ -139,7 +140,7 @@ function Dashboard() {
                     <Card.Text className='cardHeadingText'>
                         Maintenance Stats
                     </Card.Text>
-                    <PolarArea data={{
+                    {/* <PolarArea data={{
                         labels: ['Shedding', 'Grooming', 'Drooling', 'Coat Length'],
                         datasets: [{
                             label: 'Maintenance Level',
@@ -158,7 +159,7 @@ function Dashboard() {
                             ],
                             borderWidth: 1,
                         }],
-                    }} />
+                    }} /> */}
                     </Card.Body>
                 </Card>
             </div>
@@ -170,7 +171,7 @@ function Dashboard() {
                     <Card.Text className='cardHeadingText'>
                         Min vs Max Life Expectancy
                     </Card.Text>
-                    <Line data={{
+                    {/* <Line data={{
                         labels: ['Min Life Expectancy', 'Max Life Expectancy'],
                         datasets: [{
                             label: 'Life Expectancy (Years)',
@@ -191,13 +192,14 @@ function Dashboard() {
                                 text: 'Min vs Max Life Expectancy',
                             },
                         },
-                    }} />
+                    }} /> */}
                     </Card.Body>
                 </Card>
             </div>
         </div>
 
 
+<Footer />
     </div>
   );
 }

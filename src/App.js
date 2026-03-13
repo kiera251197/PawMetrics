@@ -34,7 +34,6 @@ function App() {
         <header className="App-header">
           <Navbar />
         </header>
-        <Footer />
       </div>
     </BrowserRouter>
   );

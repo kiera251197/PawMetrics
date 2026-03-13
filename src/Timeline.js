@@ -1,18 +1,32 @@
 import './App.css';
-import Logo from './Paw Metrics cyan.png';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
 
 
 function Timeline() {
     return (
-        <div className="Compare">
+        <div className="Timeline">
             <header className="Compare-header">
                 <div className='greetingContainer'>
-                    <p>Compare patterns. Spot differences. Understand breeds better</p>
+                    <p>Compare Patterns. Spot Differences. Understand Breeds Better</p>
                     <h3>Comparative Timeline</h3>
                 </div>
-            </header>    
+            </header> 
+
+            <div className='selectorContainer'>
+                    <DropdownButton id="dropdown-item-button" title="Select Breed">
+                        <Dropdown.ItemText>Select a Breed Below</Dropdown.ItemText>
+                        <Dropdown.Item as="button">Breed Name</Dropdown.Item>
+                        <Dropdown.Item as="button">Breed Name</Dropdown.Item>
+                        <Dropdown.Item as="button">Breed Name</Dropdown.Item>
+                    </DropdownButton>
+                </div>
+
+            <Card id='timelineCard'>
+                <Card.Body>Timeline Content BOOM</Card.Body>
+            </Card>   
         </div>            
     );
     }
