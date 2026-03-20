@@ -3,6 +3,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
+import LineChart from './components/LineChart';
 
 
 function Timeline() {
@@ -25,7 +26,7 @@ function Timeline() {
                 </div>
 
             <Card id='timelineCard'>
-                <Card.Body>Timeline Content BOOM</Card.Body>
+                {/* <Card.Body><LineChart /></Card.Body> */}
             </Card>   
         </div>            
     );

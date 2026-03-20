@@ -7,6 +7,10 @@ import Card from 'react-bootstrap/Card';
 import { Chart as ChartJS, RadialLinearScale, ArcElement, Tooltip, Legend, LinearScale, PointElement, LineElement, CategoryScale  } from 'chart.js';
 import { Doughnut, Line, PolarArea } from 'react-chartjs-2';
 import Footer from './components/Footer';
+import PieChart, { data as pieData } from './components/PieChartDashboard';
+import PolarAreaChart from './components/PolarAreaDashboard';
+import LineChart from './components/LineChatDashboard';
+
 
 ChartJS.register(
     RadialLinearScale, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement
@@ -67,6 +71,7 @@ function Dashboard() {
 
   return (
     <div className='dashboardContainer'>
+        <div className='dashboardContentsContainer'>
         <div className='greetingContainer'>
                 <p>Welcome all Fur Baby Lovers!</p>
                 <h3>Daily Dashboard</h3>
@@ -105,28 +110,7 @@ function Dashboard() {
                     <Card.Text className='cardHeadingText'>
                         Social & Behaviour Insights
                     </Card.Text>
-                    {/* <Doughnut data={{
-                        labels: ['Playfulness', 'Protectiveness', 'Good with Strangers', 'Good with Children', 'Good with Other Dogs'],
-                        datasets: [{
-                            label: 'Social & Behaviour Insights',
-                            data: [dogData.good_with_strangers, dogData.good_with_children, dogData.good_with_other_dogs, dogData.playfulness, dogData.protectiveness],
-                            backgroundColor: [
-                                'rgba(21, 41, 45, 1)',
-                                'rgba(46, 84, 92, 1)',
-                                'rgba(77, 116, 124, 1)',
-                                'rgba(114, 157, 166, 1)',
-                                'rgba(217, 238, 243, 1)'
-                            ],
-                            borderColor: [
-                                'rgba(21, 41, 45, 1)',
-                                'rgba(46, 84, 92, 1)',
-                                'rgba(77, 116, 124, 1)',
-                                'rgba(114, 157, 166, 1)',
-                                'rgba(217, 238, 243, 1)'
-                            ],
-                            borderWidth: 1,
-                        }],
-                    }} />    */}
+                        <PieChart dogData={dogData} />
                     </Card.Body>
                 </Card>
             </div>
@@ -136,30 +120,11 @@ function Dashboard() {
             {/* Maintenance Stats */}
             <div className="cardContainer">
                 <Card className='cardBodyShort' style={{ backgroundColor: '#9A72A6', border: 'none', alignItems: 'center' }}>
-                    <Card.Body>
+                    <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Text className='cardHeadingText'>
                         Maintenance Stats
                     </Card.Text>
-                    {/* <PolarArea data={{
-                        labels: ['Shedding', 'Grooming', 'Drooling', 'Coat Length'],
-                        datasets: [{
-                            label: 'Maintenance Level',
-                            data: [dogData.shedding, dogData.grooming, dogData.drooling, dogData.coat_length],
-                            backgroundColor: [
-                                'rgba(66, 74, 51, 1)',
-                                'rgba(84, 95, 64, 1)',
-                                'rgba(147, 166, 114, 1)',
-                                'rgba(187, 213, 143, 1)'
-                            ],
-                            borderColor: [
-                                'rgba(66, 74, 51, 1)',
-                                'rgba(84, 95, 64, 1)',
-                                'rgba(147, 166, 114, 1)',
-                                'rgba(187, 213, 143, 1)'
-                            ],
-                            borderWidth: 1,
-                        }],
-                    }} /> */}
+                        <PolarAreaChart dogData={dogData} />
                     </Card.Body>
                 </Card>
             </div>
@@ -171,35 +136,14 @@ function Dashboard() {
                     <Card.Text className='cardHeadingText'>
                         Min vs Max Life Expectancy
                     </Card.Text>
-                    {/* <Line data={{
-                        labels: ['Min Life Expectancy', 'Max Life Expectancy'],
-                        datasets: [{
-                            label: 'Life Expectancy (Years)',
-                            data: [dogData.min_life_expectancy, dogData.max_life_expectancy,],
-                            backgroundColor: 'rgba(217, 238, 243, 1)',
-                            borderColor: 'rgba(217, 238, 243, 1)',
-                            borderWidth: 2,
-                            fill: true,
-                        }],
-                    }} options={{
-                        responsive: true,
-                        plugins: {
-                            legend: {
-                                position: 'top',
-                            },
-                            title: {
-                                display: false,
-                                text: 'Min vs Max Life Expectancy',
-                            },
-                        },
-                    }} /> */}
+                        <LineChart dogData={dogData} />
                     </Card.Body>
                 </Card>
             </div>
         </div>
 
-
-<Footer />
+        </div>
+    <Footer />    
     </div>
   );
 }
