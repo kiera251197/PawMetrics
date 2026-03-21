@@ -74,7 +74,7 @@ function Compare() {
                                     <Card.Title>Trainability & Energy</Card.Title>
                                     
                                     <div className='barChart'>
-                                        
+                                        <BarChart dogData={dog1} />
                                     </div>
                                 </Card> 
                             </div>
@@ -140,7 +140,7 @@ function Compare() {
                                     <Card.Title>Trainability & Energy</Card.Title>
                                     
                                     <div className='barChart'>
-                                        <p>Bar chart</p>
+                                        <BarChart dogData={dog2} />
                                     </div>
                                 </Card> 
                             </div>

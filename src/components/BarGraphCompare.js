@@ -18,15 +18,15 @@ function BarChart({ dogData }) {
     labels: ['Energy', 'Trainability', 'Barking'],
     datasets: [
       {
-        label: 'Level (1-5)',
+        label: 'Rating (1-5)',
         data: [
           dogData?.energy || 0,
           dogData?.trainability || 0,
           dogData?.barking || 0,
         ],
         backgroundColor: [
-          '#467680', 
-          '#729DA6', 
+          '#BBD58F', 
+          '#D2B0DC', 
           '#D9EEF3', 
         ],
         borderRadius: 8, 
@@ -41,10 +41,10 @@ function BarChart({ dogData }) {
       y: {
         beginAtZero: true,
         max: 5,
-        ticks: { color: '#FFFFFF' }
+        ticks: { color: '#F4E3D9' }
       },
       x: {
-        ticks: { color: '#FFFFFF' }
+        ticks: { color: '#F4E3D9' }
       }
     },
     plugins: {

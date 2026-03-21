@@ -1,33 +1,34 @@
 import './App.css';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import LineChart from './components/LineChart';
+import LineChart from './components/LineChartTimeline';
+import Footer from './components/Footer';
+import DogDropdown from './components/DogDropdown';
 
 
 function Timeline() {
+    const [dogData, setDogData] = useState(null);
+    
     return (
         <div className="Timeline">
-            <header className="Compare-header">
-                <div className='greetingContainer'>
-                    <p>Compare Patterns. Spot Differences. Understand Breeds Better</p>
-                    <h3>Comparative Timeline</h3>
-                </div>
-            </header> 
+            <div className='timelineContainer'>
+                <header className="Timeline-header">
+                    <div className='greetingContainer'>
+                        <p>Compare Patterns. Spot Differences. Understand Breeds Better</p>
+                        <h3>Comparative Timeline</h3>
+                    </div>
+                </header> 
 
-            <div className='selectorContainer'>
-                    <DropdownButton id="dropdown-item-button" title="Select Breed">
-                        <Dropdown.ItemText>Select a Breed Below</Dropdown.ItemText>
-                        <Dropdown.Item as="button">Breed Name</Dropdown.Item>
-                        <Dropdown.Item as="button">Breed Name</Dropdown.Item>
-                        <Dropdown.Item as="button">Breed Name</Dropdown.Item>
-                    </DropdownButton>
+                <div className='selectorContainer'>
+                    <DogDropdown label="Select Breed" onSelectBreed={(data) => setDogData(data)} />
                 </div>
 
-            <Card id='timelineCard'>
-                {/* <Card.Body><LineChart /></Card.Body> */}
-            </Card>   
+                <Card id='timelineCard'>
+                    <LineChart dogData={dogData}/>
+                </Card>   
+            </div>
+            <Footer />
         </div>            
     );
     }

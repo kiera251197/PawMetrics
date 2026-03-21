@@ -6,15 +6,18 @@ function DogDropdown({ onSelectBreed, label }) {
     const breeds = [
         "Beagle", 
         "Border Collie",
+        "Chihuahua",
         "Dalmation",
         "Dachshund",
         "French Bulldog",
         "German Shepherd", 
         "Golden Retriever",
         "Labrador Retriever",
+        "Maltese",
         "Pekingese", 
         "Pug",
         "Rottweiler",
+        "Shih Tzu",
         "Siberian Husky" 
     ];
 
