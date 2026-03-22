@@ -48,7 +48,6 @@ function DogDropdown({ onSelectBreed, label }) {
                 if (onSelectBreed) onSelectBreed(dogData); 
             }
         })
-        .catch(err => console.error("Fetch error:", err));
     };
 
     return (

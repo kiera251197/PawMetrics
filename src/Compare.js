@@ -1,13 +1,12 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import Footer from './components/Footer';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import DogDropdown from './components/DogDropdown';
+import RandomDogButton from './components/RandomDogButton';
 import PieChart from './components/PieChartCompare';
 import BarChart from './components/BarGraphCompare';
 import PolarAreaChart from './components/PolarAreaCompare';
@@ -27,8 +26,6 @@ function Compare() {
                         <p>Compare Some, Compare All!</p>
                         <h3>Breed Comparator</h3>
                     </div>
-                    {/* Im testing something to see if this works, if not I might cry */}
-                    {/* <DogDropdown /> */}
                 </header>
 
                 <div className='breedCompareContainer'>
@@ -36,7 +33,7 @@ function Compare() {
                         <div className='selectorContainer'>
                             <DogDropdown label="Select Breed" onSelectBreed={(data) => setDog1(data)} />
 
-                            <Button variant="secondary">Select Random</Button>
+                            <RandomDogButton onDogSelected={(data) => setDog1(data)}/>
                         </div>
 
                         <div className='breedCardsContainer'>
@@ -102,7 +99,7 @@ function Compare() {
                         <div className='selectorContainer'>
                             <DogDropdown label="Select Breed" onSelectBreed={(data) => setDog2(data)} />
 
-                            <Button variant="secondary">Select Random</Button>
+                            <RandomDogButton onDogSelected={(data) => setDog2(data)} />
                         </div>
 
                         <div className='breedCardsContainer'>

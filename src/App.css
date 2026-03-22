@@ -419,7 +419,7 @@
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   text-decoration: none;
 }
 
@@ -436,9 +436,9 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   text-shadow: 3px 3px 5px #312037;
-  padding: 4%;
+  padding: 1rem;
 }
 
 .breedContainer{
@@ -446,45 +446,36 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 0 1rem;
 }
 
 .compareContainer{
   min-height: 100vh;
   width: auto;
-  background: linear-gradient(0deg, rgba(46, 84, 92, 1) 0%, rgba(244, 227, 217, 1) 100%);  display: flex;
   flex-direction: column;
   padding: 2% 3%;
 }
 
 .selectorContainer{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important; 
+  justify-content: center !important;
   gap: 5rem;
-  margin-top: 2%;
-  width: 100%;
+  /* margin-top: 2%; */
+  /* width: 100%; */
 }
 
-
-
 .breedCardsContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 70%;
   margin-top: 2%;
 }
 
 .breedCompareContainer{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-  margin: 1rem 2rem;
+  width: 100%;
+  gap: 1rem;
 }
 
 
