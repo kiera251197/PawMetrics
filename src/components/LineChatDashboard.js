@@ -41,6 +41,7 @@ function LifeExpectancyChart({ dogData }) {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     scales: {
       y: {
         beginAtZero: false,
@@ -48,7 +49,7 @@ function LifeExpectancyChart({ dogData }) {
         title: { display: true, text: 'Age', color: '#F4E3D9' }
       },
       x: {
-        ticks: { color: '#F4E3D9' }
+        ticks: { color: '#F4E3D9', font: {size: 14 }}
       }
     },
     plugins: {

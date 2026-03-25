@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import '../App.css'; 
 import LogoVertical from '../purple logo vertical.png';
 import Dashboard from '../Dashboard';
@@ -12,13 +12,15 @@ import TimelineIcon from '../chart-gantt-solid.png';
 const Navbar = () => {
   return (
     <>
+    {/* My sidebar */}
       <nav className="sidebar">
-        <Link to="/"><img src={LogoVertical} id="pawmetrics-logo-vertical" alt="pawmetrics logo"/> </Link>
+        <Link to="/"><img src={LogoVertical} id="pawmetrics-logo-vertical" alt="pawmetrics logo" /> </Link>
         <Link to="/" className='hover-underline'><img src={DashboardIcon} alt="Dashboard" />Dashboard</Link>
         <Link to="/compare" className='hover-underline'><img src={CompareIcon} alt="Comparison" />Comparison</Link>
         <Link to="/timeline" className='hover-underline'><img src={TimelineIcon} alt="Timeline" />Timeline</Link>
       </nav>
 
+      {/* Routes */}
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/compare" element={<Compare />} />

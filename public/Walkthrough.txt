@@ -1,0 +1,9 @@
+Hi tsungai! Here is the link to my walkthrough video of PawMetrics <3
+https://drive.google.com/file/d/1guclv9WooAtRBBnxTp3FNliekpV_B-fS/view?usp=sharing
+
+Link to Figma Wireframes:
+https://www.figma.com/design/MNwdM3xiyc5NWE8zU0yWPv/DV-200-Designs?node-id=0-1&t=AZclXYzqhNCo3AW1-0
+
+Link to Hover States used on Buttons:
+https://codepen.io/nefejames/pen/ogvNgJq
+https://codepen.io/nefejames/pen/qEWBOBz

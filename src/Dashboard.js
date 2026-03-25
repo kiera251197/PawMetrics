@@ -5,7 +5,6 @@ import HeaderImg from './PawMetrics Dog Landing.png';
 import PawMetricsLogoLong from './Paw Metrics cyan.png';
 import Card from 'react-bootstrap/Card';
 import { Chart as ChartJS, RadialLinearScale, ArcElement, Tooltip, Legend, LinearScale, PointElement, LineElement, CategoryScale  } from 'chart.js';
-import { Doughnut, Line, PolarArea } from 'react-chartjs-2';
 import Footer from './components/Footer';
 import PieChart, { data as pieData } from './components/PieChartDashboard';
 import PolarAreaChart from './components/PolarAreaDashboard';
@@ -17,7 +16,6 @@ ChartJS.register(
 );
 
 function Dashboard() {
-    //UseState
     const [dogData, setDogData] = useState("");
 
     //Headers for API call
@@ -35,6 +33,7 @@ function Dashboard() {
         }
     };
 
+    //Fetch request for retreiving data from Rapidapi
     fetch("https://dogs-by-api-ninjas.p.rapidapi.com/v1/dogs?name=golden%20retriever", options)
         .then((response) => {
             return response.json();
@@ -46,24 +45,6 @@ function Dashboard() {
             }
         })
 };
-    // const options = {
-    //     method: 'GET',
-    //     headers: {
-    //       'x-rapidapi-key': 'а53858b274mshc183701b570dde1p126299jsn47fed24ded66', 
-    //       'x-rapidapi-host': 'dogs-by-api-ninjas.p.rapidapi.com'
-    //     }
-    //   };
-    
-    //   const [dogData, setDogData] = useState("");
-        
-    //   const getDogData = () => {
-    //     fetch("https://dogs-by-api-ninjas.p.rapidapi.com/v1/dogs?name=golden%20retriever")
-    //       .then((response) => response.json())
-    //       .then((data) => {
-    //         setDogData(data);
-    //         console.log(data);
-    //       })
-    //   };
     
       useEffect(() => {
         getDogData();
@@ -77,6 +58,7 @@ function Dashboard() {
                 <h3>Daily Dashboard</h3>
         </div>
 
+        {/* Hero Section */}
         <div className='heroContainer'>
             <div className='heroContent'>
                 <img src={PawMetricsLogoLong} className="pawmetrics-logo-long" alt="pawmetrics logo"/>
@@ -107,7 +89,7 @@ function Dashboard() {
             <div className="cardContainer">
                 <Card className='cardBodyShort' style={{ backgroundColor: '#9A72A6', border: 'none', alignItems: 'center' }}>
                     <Card.Body>
-                    <Card.Text className='cardHeadingText'>
+                    <Card.Text className='cardHeadingText' style={{ textAlign: 'center', width: '100%' }}>
                         Social & Behaviour Insights
                     </Card.Text>
                         <PieChart dogData={dogData} />
@@ -136,7 +118,9 @@ function Dashboard() {
                     <Card.Text className='cardHeadingText'>
                         Min vs Max Life Expectancy
                     </Card.Text>
-                        <LineChart dogData={dogData} />
+                        <div className='lineChartContainer'>
+                            <LineChart dogData={dogData} />
+                        </div>
                     </Card.Body>
                 </Card>
             </div>

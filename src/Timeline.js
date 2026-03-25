@@ -20,6 +20,7 @@ function Timeline() {
                     </div>
                 </header> 
 
+                {/* Timeline Section */}
                 <div className='selectorContainer'>
                     <DogDropdown label="Select Breed" onSelectBreed={(data) => setDogData(data)} />
                 </div>

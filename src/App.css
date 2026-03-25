@@ -9,10 +9,15 @@
   position: sticky;  
   top: 0;
   background-color: #93A672;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .sidebar img{
-  width: 10%;
+  width: 2rem;
+  margin: 1rem;
 }
 
 #pawmetrics-logo-vertical{
@@ -93,6 +98,7 @@
 /* Footer */
 .footerContainer{
   max-height: 40vh;
+  width: 100%;
   background-color: #2E545C;
   color: #D9EEF3;
   font-family: "Montserrat", sans-serif;
@@ -173,8 +179,10 @@
 
 /* Header Section */
 .dashboardContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   min-height: 100vh;
-  width: auto;
 }
 
 .dashboardContentsContainer{
@@ -325,9 +333,8 @@
 
 .cardBodyLong{
   background-color: #9A72A6;
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 20px;
-  /* margin: 20px; */
   margin-top: 2rem;
   width: 40rem;
   min-height: 26rem;
@@ -337,11 +344,10 @@
 
 .cardBodyShort{
   background-color: #9A72A6;
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 20px;
-  /* margin: 20px; */
   margin-top: 2rem;
-  width: 25rem;
+  width: 29rem;
   min-height: 26rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   align-items: center !important;
@@ -363,12 +369,24 @@
   justify-content: space-between;
 }
 
+.lineChartContainer {
+  width: 100%;
+  height: 18rem;
+  padding: 2%;
+}
 
 
 
 
 
 /* COMPARISON PAGE! */
+.Compare{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
 #dropdown-item-button{
   background-color: #2E545C;
   color: #D9EEF3;
@@ -484,21 +502,25 @@
 
 
 /* TIMELINE PAGE! */
-#timelineCard{
+.Timeline {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.timelineContainer{
+  padding: 2% 3%;
+}
+
+#timelineCard {
+  width: 100%;
+  height: auto;
   background-color: #9A72A6;
-  font-family: "Montserrat", sans-serif;
   color: #F4E3D9;
   min-height: 35rem;
   border: none;
   border-radius: 16px;
-  box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.400);
-  align-items: center;
-}
-
-.timelineContainer{
-  min-height: 100vh;
-  width: 100%;
-  background: linear-gradient(0deg, rgba(46, 84, 92, 1) 0%, rgba(244, 227, 217, 1) 100%);  display: flex;
-  flex-direction: column;
-  padding: 2% 3%;
+  box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  padding: 20px;
 }

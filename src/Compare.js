@@ -28,6 +28,7 @@ function Compare() {
                     </div>
                 </header>
 
+                {/* Breed Pannels */}
                 <div className='breedCompareContainer'>
                     <div className='breedContainer'>
                         <div className='selectorContainer'>
@@ -37,6 +38,8 @@ function Compare() {
                         </div>
 
                         <div className='breedCardsContainer'>
+
+                            {/* Image, Name & Expectancy Card */}
                             <div className='mainInfoCardContainer'>
                                 <Card style={{ width: '35rem', backgroundColor: '#9A72A6', color: '#D9EEF3', border: 'none', alignItems: 'center', borderRadius: '16px', marginBottom: '24px', padding: '4%' }}>
                                     <Card.Title>{dog1?.name}</Card.Title>
@@ -56,6 +59,7 @@ function Compare() {
                                 </Card>  
                             </div>
 
+                            {/* Maintenance Card */}
                             <div className='maintenanceContainer'>
                                 <Card style={{ width: '35rem', backgroundColor: '#9A72A6', color: '#D9EEF3', border: 'none', alignItems: 'center', borderRadius: '16px', marginBottom: '24px', padding: '4%' }}>
                                     <Card.Title>Maintenance</Card.Title>
@@ -66,6 +70,7 @@ function Compare() {
                                 </Card> 
                             </div>
 
+                            {/* Trainability Card */}
                             <div className='trainabilityContainer'>
                                 <Card style={{ width: '35rem', backgroundColor: '#9A72A6', color: '#D9EEF3', border: 'none', alignItems: 'center', borderRadius: '16px', marginBottom: '24px', padding: '4%' }}>
                                     <Card.Title>Trainability & Energy</Card.Title>
@@ -76,6 +81,7 @@ function Compare() {
                                 </Card> 
                             </div>
 
+                            {/* Social and Behavioural Card */}
                             <div className='behaviourContainer'>
                                 <Card style={{ width: '35rem', backgroundColor: '#9A72A6', color: '#D9EEF3', border: 'none', alignItems: 'center', borderRadius: '16px', marginBottom: '24px', padding: '4%' }}>
                                     <Card.Title>Social & Behaviour</Card.Title>
@@ -103,6 +109,8 @@ function Compare() {
                         </div>
 
                         <div className='breedCardsContainer'>
+
+                            {/* Image, Name & Expectancy Card */}                            
                             <div className='mainInfoCardContainer'>
                                 <Card style={{ width: '35rem', backgroundColor: '#9A72A6', color: '#D9EEF3', border: 'none', alignItems: 'center', borderRadius: '16px', marginBottom: '24px', padding: '4%' }}>
                                     <Card.Title>{dog2?.name}</Card.Title>
@@ -122,6 +130,7 @@ function Compare() {
                                 </Card>  
                             </div>
 
+                            {/* Maintenance Card */}
                             <div className='maintenanceContainer'>
                                 <Card style={{ width: '35rem', backgroundColor: '#9A72A6', color: '#D9EEF3', border: 'none', alignItems: 'center', borderRadius: '16px', marginBottom: '24px', padding: '4%' }}>
                                     <Card.Title>Maintenance</Card.Title>
@@ -132,6 +141,7 @@ function Compare() {
                                 </Card> 
                             </div>
 
+                            {/* Trainability Card */}
                             <div className='trainabilityContainer'>
                                 <Card style={{ width: '35rem', backgroundColor: '#9A72A6', color: '#D9EEF3', border: 'none', alignItems: 'center', borderRadius: '16px', marginBottom: '24px', padding: '4%' }}>
                                     <Card.Title>Trainability & Energy</Card.Title>
@@ -142,6 +152,7 @@ function Compare() {
                                 </Card> 
                             </div>
 
+                            {/* Social and Behavioural Card */}
                             <div className='behaviourContainer'>
                                 <Card style={{ width: '35rem', backgroundColor: '#9A72A6', color: '#D9EEF3', border: 'none', alignItems: 'center', borderRadius: '16px', marginBottom: '24px', padding: '4%' }}>
                                     <Card.Title>Social & Behaviour</Card.Title>
