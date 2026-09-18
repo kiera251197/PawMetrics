@@ -157,6 +157,10 @@ The dropdown currently pulls from a curated list of 15 breeds. Pulling the full 
 
 ![Desktop 2](https://github.com/kiera251197/PawMetrics/blob/4a21aa7cff98c494e560020102fb517d85fcf709/public/desktop%202.png)
 
+### Monitor Mockup
+
+https://github.com/user-attachments/assets/b683ffc9-92b0-42e6-aa53-c1fb05d13403
+
 ### Demo Video
 
 [PawMetrics Walkthrough](https://drive.google.com/file/d/1guclv9WooAtRBBnxTp3FNliekpV_B-fS/view?usp=sharing)
